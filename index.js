@@ -76,7 +76,7 @@ app.post('/reports', function (req, res) {
 
   oauth2client.setCredentials(req.body);
   google.options({auth: oauth2client});
-  dfaReporting = google.dfareporting('v2.6');
+  dfaReporting = google.dfareporting('v2.8');
 
   console.log('Reports request received.');
 
@@ -156,7 +156,7 @@ app.post('/data', function (req, res) {
 
       oauth2client.setCredentials(req.body.auth);
       google.options({auth: oauth2client});
-      dfaReporting = google.dfareporting('v2.6');
+      dfaReporting = google.dfareporting('v2.8');
 
       dfaReporting.reports.run({
         profileId: req.body.profileId,
@@ -215,7 +215,7 @@ app._getColumns = function getColumns(opts, callback) {
 
   oauth2client.setCredentials(opts.auth);
   google.options({auth: oauth2client});
-  dfaReporting = google.dfareporting('v2.6');
+  dfaReporting = google.dfareporting('v2.8');
 
   dfaReporting.reports.get({
     profileId: opts.profileId,
