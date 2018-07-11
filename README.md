@@ -1,9 +1,9 @@
 # DoubleClick Campaign Manager WDC [![Build Status](https://travis-ci.org/tableau-mkt/dcm-dfa-wdc.svg?branch=master)](https://travis-ci.org/tableau-mkt/dcm-dfa-wdc)
 
 ### Running this WDC
-If at all possible, we recommend using the [hosted version of this WDC](https://dcm-dfa-wdc.herokuapp.com/).
+As a convenience, we provide a [hosted version of this WDC](https://dcm-dfa-wdc.herokuapp.com/) for testing and validation purposes. If you plan to use this connector for production workloads, we recommend hosting the web data connector on your own systems.
 
-If you'd like to run this locally or deploy it yourself, you will need to do the following:
+You will need to do the following:
 
 - Make sure you have [Node.js](https://nodejs.org/en/) and [grunt](http://gruntjs.com/getting-started#installing-the-cli)
   installed.
